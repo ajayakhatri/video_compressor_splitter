@@ -118,7 +118,7 @@ def upload_videos(file_path):
 
 
 def askfile():
-    file_path = filedialog.askopenfilename(filetypes=[("Video Files", "*.mkv")])
+    file_path = filedialog.askopenfilename(filetypes=[("Video Files", "*.*")])
     if len(os.path.basename(file_path)) != 0:
         output_label.pack()
         output_button.pack(pady=(5, 10))
